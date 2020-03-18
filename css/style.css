@@ -13,7 +13,7 @@
         color: white;
     }
 
-    .elegantshadow {
+    .elegantshadow { /* Code taken from https://codepen.io/juanbrujo/pen/yGpAK */
     color: #131313;
     background-color: white;
     letter-spacing: .15em;
@@ -130,7 +130,7 @@
         border-radius: 75%;
     }
 
-    .parallax-image {
+    .parallax-image { /* Code taken and modified from w3schools */
         background-image: url("../images/dog10.jpg");
         height: 400px;
         background-position: center;
@@ -309,6 +309,47 @@
         justify-content: center;
     }
 }
+
+/* Flip-Card Here - Code taken and modified from w3schools*/
+
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    margin-left: 800px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card:focus .flip-card-inner, .flip-card-back{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.flip-card-back{
+    background-color: #641DC0;
+    color: white;
+    transform: rotateY(180deg);
+}
 /* Contact Form here */
 
 form{
@@ -351,7 +392,7 @@ input[type="submit"]:hover{
   background-color: #C0C0C0;
 }
 
-/* Skip to Main */
+/* Skip to Main  - Code taken from Lecture 4*/
 
 .skip a {
     background: white;
@@ -370,7 +411,7 @@ input[type="submit"]:hover{
   border: 2px solid black;
 }
 
-/* Mobile and Tablet Views */
+/* Tablet Views */
 @media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
@@ -684,4 +725,320 @@ input[type="submit"]{
 input[type="submit"]:hover{
   color: #000000;
   background-color: #C0C0C0;
+}
+
+/* Mobile Query */
+
+@media screen and (max-width: 480px){
+      .parallax {
+    background-attachment: scroll;
+  }
+
+html {
+        scroll-behavior: smooth;
+    }
+
+    h1 {
+        font-family: eurostile, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 36px;
+        text-align: center;
+        color: white;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #generic-text {
+        font-family: eurostile, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 50px;
+        color: white;
+    }
+
+    #who-i-am {
+        font-family: eurostile, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 36px;
+        text-align: center;
+        color: black;
+    }
+
+    #nice-to-meet-you {
+        padding-top: 60px;
+    }
+
+    #about-me {
+        display: flex;
+        align-items: center;
+        margin-left: 150px;
+        margin-right: 150px;
+        text-align: center;
+        justify-content: center;
+        font-family: eurostile, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 28px;
+        color: white;
+    }
+
+    .dl-resume {
+        display: block;
+        margin: 0 auto;
+        background-color: white;
+        border: none;
+        color: #641DC0;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 24px;
+        margin-top: 50px;
+        font-family: eurostile, sans-serif;
+        font-weight: 800px;
+        font-style: normal;
+    }
+
+    #resume-link {
+        text-decoration: none;
+    }
+
+    #pic-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .fb-pic {
+        height: 500px;
+        width: 450px;
+    }
+
+
+    .avatar {
+        display: grid;
+        width: 200px;
+        height: 200px;
+        border-radius: 75%;
+    }
+
+    .circuit {
+        display: grid;
+        width: 800px;
+        height: 400px;
+        position: absolute;
+        margin-top: 200px;
+    }
+
+    .skittles-div {
+        background-color: #641DC0;
+        color: white;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin-top: 100px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #active {
+        font-weight: bold;
+        text-decoration: underline;
+        color: #641DC0;
+        margin-left: 50px;
+    }
+
+    #footer-div {
+        background-color: #414A4C;
+        height: 100px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-column-start: span;
+        list-style-type: none;
+        font-family: eurostile, sans-serif;
+        font-size: 24px;
+        justify-items: center;
+        background-color: #641DC0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 15px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: absolute;
+        margin-right: 1700px;
+        margin-top: -100px;
+    }
+
+    .topnav #myLinks {
+        display: none;
+        margin-left: 50px;
+        font-size: 18px;
+        font-family: eurostile, sans-serif;
+    }
+
+    .topnav a {
+        color: #641DC0;
+        padding: 14px 16px;
+        font-family: eurostile, sans-serif;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background-color: white;
+        color: #641DC0;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+
+    .nav-item a {
+        text-decoration: none;
+        color: white;
+        /*font-weight: lighter;*/
+    }
+
+
+    #what-i-do {
+        font-family: europa, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 32px;
+        text-align: center;
+        color: black;
+    }
+
+    #project-pics {
+        height: 400px;
+        width: 350px;
+        display: block;
+        margin-left: 75px;
+        margin-top: 20px;
+        padding-bottom: 25px;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px;
+        font-family: eurostile, sans-serif;
+    }
+
+    .skittles {
+        font-size: 36px;
+        color: green;
+        font-family: eurostile, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        justify-self: center;
+    }
+
+    .skittles-descriptions {
+        font-size: 24px;
+        color: blue;
+        font-family: eurostile, sans-serif;
+        justify-self: center;
+    }
+
+    .column {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        font-size: 24px;
+        font-weight: 800;
+        font-family: eurostile, sans-serif;
+        border-radius: 15px;
+        background-color: white;
+        position: relative;
+        justify-self: center;
+        width: 300px;
+        height: 500px;
+        box-shadow: 0 0 25px rgba(40, 47, 60, 0.5);
+    }
+
+
+    .gallery-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        grid-gap: 25px;
+        margin-left: 15px;
+    }
+
+    .gallery-img {
+        height: 400px;
+        width: 300px;
+        border: 1px solid #000;
+    }
+
+    #column-1-content {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+/* Contact Form here */
+
+form{
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+form label{
+  color: white;
+  font-size: 20px;
+  font-family: eurostile, sans-serif;
+  font-weight: bold;
+}
+
+input, select, textarea{
+  width: 660px;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 5px;
+  outline-color: #8b0000;
+}
+
+input[type="submit"]{
+  width: initial;
+  color: #641DC0;
+  cursor: pointer;
+  padding: 15px 15px;
+  border-radius: 5px;
+  background-color: white;
+  transition: background-color 800ms;
+  -webkit-transition: background-color 800ms;
+}
+
+input[type="submit"]:hover{
+  color: #000000;
+  background-color: #C0C0C0;
+}
+
 }
