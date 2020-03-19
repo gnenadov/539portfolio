@@ -23,7 +23,7 @@ html {
     .margin-top-200{
         margin-top: 200px;
     }
-    #generic-text-black{
+    .generic-text-black{
         font-family: eurostile, sans-serif;
         font-weight: 800;
         font-style: normal;
@@ -95,6 +95,10 @@ html {
         justify-self: center;
     }
 
+    .about-pics {
+        justify-self: center;
+    }
+
     #skills-skittles-div{
         margin-top: 150px;
         display: grid;
@@ -107,7 +111,7 @@ html {
     .skills-margin-top{
         margin-top: 125px;
     }
-    #generic-text-skills{
+    .generic-text-skills{
         font-family: eurostile, sans-serif;
         font-weight: 800;
         font-style: normal;
@@ -172,6 +176,14 @@ html {
         color: white;
     }
 
+    .generic-text {
+        font-family: eurostile, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 28px;
+        color: white;
+    }
+
     .generic-text-0-auto{
         font-family: eurostile, sans-serif;
         font-weight: 800;
@@ -189,6 +201,17 @@ html {
         color: black;
         margin-bottom: 75px;
     }
+
+    .about-who-i-am {
+        font-family: eurostile, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 48px;
+        text-align: center;
+        color: black;
+        margin-bottom: 75px;
+    }
+
 
     #nice-to-meet-you {
         padding-top: 60px;
@@ -370,6 +393,16 @@ html {
     }
 
     #project-pics {
+        height: 650px;
+        width: 500px;
+        display: block;
+        margin-left: 300px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    .project-pics {
         height: 650px;
         width: 500px;
         display: block;
@@ -643,6 +676,15 @@ html {
         padding-top: 25px;
     }
 
+    .project-pics {
+        height: 400px;
+        width: 350px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 25px;
+
+    }
+
     #id-div-1{
         display: grid;
         grid-template-columns: 1fr;
@@ -668,6 +710,28 @@ html {
         height: 100%;
     }
 
+    #about-div-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-top: 75px;
+    }
+
+    .about-margin-1{
+        margin: 0 auto;
+    }
+
+    .about-margin-2{
+        margin: 0 auto;
+    }
+
+    .fb-pic{
+        height: 250px;
+        width: 200px;
+    }
+
 }
 
 @media (min-width: 700px) and (max-width: 1024px){
@@ -685,6 +749,13 @@ html {
         margin-left: 100px;
         width: 350px;
         height: 600px;
+    }
+
+    .project-pics {
+        margin-left: 100px;
+        width: 350px;
+        height: 600px;
+
     }
 
     .id-margins{
