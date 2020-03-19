@@ -285,6 +285,7 @@ body {
         width: 200px;
         height: 700px;
         box-shadow: 0 0 25px rgba(40, 47, 60, 0.5);
+        text-align: center;
     }
 
 
@@ -738,6 +739,119 @@ input[type="submit"]:hover{
         color: white;
     }
 
+    #index-div-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .margin-top-200{
+        margin-top: 200px;
+    }
+    #generic-text-black{
+        font-family: eurostile, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 28px;
+        color: black;
+    }
+
+    #flip-card-size{
+        height: 300px;
+        width: 300px;
+    }
+
+    #dog-filter-1{
+        opacity: 0.8;
+    }
+
+    #dog-filter-2{
+        border: 1px solid yellow;
+    }
+
+    #dog-filter-3{
+        border-bottom: 1px solid cyan;
+        filter: grayscale(100%);
+    }
+
+    .id-proj-pics {
+        height: 650px;
+    }
+
+    #about-div-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-top: 75px;
+    }
+
+    .about-margin-1{
+        margin-right: 200px;
+        margin-top: 100px;
+    }
+
+    .about-margin-2{
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+
+    #id-div-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: -50px
+    }
+    #id-ID-1{
+        margin-top: 150px;
+        height: 100%;
+    }
+    #id-ID-2{
+        margin-top: 250px;
+        height: 100%;
+    }
+
+    #about-margin {
+        margin-top: 150px;
+    }
+
+    #about-pics {
+        justify-self: center;
+    }
+
+    #skills-skittles-div{
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-top: 50px;
+        height: 800px;
+    }
+
+    .skills-margin-top{
+        margin-top: 125px;
+    }
+    #generic-text-skills{
+        font-family: eurostile, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 36px;
+        color: #641DC0;
+    }
+
+    #skills-div-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
     .elegantshadow { /* Code taken from https://codepen.io/juanbrujo/pen/yGpAK */
         color: #131313;
         background-color: white;
@@ -863,6 +977,12 @@ input[type="submit"]:hover{
         background-size: cover;
     }
 
+    #parallax-image-stuff{
+        height: 500px;
+        margin-bottom: -100px;
+        margin-top: 25px;
+    }
+
     .circuit {
         display: grid;
         width: 800px;
@@ -895,6 +1015,8 @@ input[type="submit"]:hover{
         width: 100%;
         margin: 0;
         padding: 0;
+        display: grid;
+        grid-template-rows: 1fr;
     }
 
     .nav-links {
@@ -963,13 +1085,40 @@ input[type="submit"]:hover{
     }
 
     #project-pics {
-        height: 500px;
+        height: 650px;
         width: 500px;
         display: block;
         margin-left: 300px;
         margin-top: 50px;
         padding-bottom: 50px;
 
+    }
+
+    #id-generic-text{
+        font-family: eurostile, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 36px;
+        color: white;
+        margin-top: 50px;
+    }
+
+    .ci-margins{
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+
+    #height-100{
+        height: 100%;
+    }
+
+    .id-margins{
+        margin-right: 200px;
+        margin-top: 50px
+    }
+
+    #color-white{
+        color: white;
     }
 
     .container {
@@ -1024,6 +1173,14 @@ input[type="submit"]:hover{
         height: 400px;
         width: 400px;
         border: 1px solid #000
+    }
+
+    #gallery-stuff {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-top: 50px;
+        height: 1300px;
     }
 
     #column-1-content {
