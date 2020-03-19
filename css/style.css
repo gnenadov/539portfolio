@@ -272,7 +272,7 @@ body {
         justify-self: center;
     }
 
-.column {
+.column{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         font-size: 24px;
