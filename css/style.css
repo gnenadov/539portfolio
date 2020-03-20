@@ -550,7 +550,7 @@ html {
         transform: rotateY(180deg);
     }
 
-    /* Contact Form here */
+    /* Contact Form here - Code taken and modified from Formspree.*/
     form {
         width: 700px;
         margin: 0 auto;
